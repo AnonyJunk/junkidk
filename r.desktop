@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=RCE Example
+Comment=Show RCE example
+Exec=xmessage "RCE. This is a sandbox escape :)"
+Icon=
+Terminal=true
+Type=Application
+Categories=Application;
+Path=
+StartupNotify=false
